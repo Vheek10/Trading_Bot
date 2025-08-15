@@ -10,7 +10,7 @@ export default function BotInfoSection() {
 			<div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-24 xl:px-28 flex flex-col lg:flex-row items-start gap-10">
 				{/* Left Side Illustration with Rotating Star */}
 				<div className="flex-1 flex justify-center lg:justify-start relative">
-					<div className="w-full max-w-md h-80 bg-gray-200 rounded-xl flex items-center justify-center relative">
+					<div className="w-full max-w-md h-100 bg-gray-200 rounded-xl flex items-center justify-center relative">
 						<span className="text-gray-500">[Illustration Here]</span>
 
 						{/* Rotating Star */}
