@@ -3,13 +3,34 @@
 
 import CTAButton from "@/components/CTAButton";
 import Image from "next/image";
+import { useRef, useEffect, useState } from "react";
 
 export default function BotBenefitsSection() {
+	const textRef = useRef<HTMLDivElement>(null);
+	const [textHeight, setTextHeight] = useState(0);
+
+	useEffect(() => {
+		if (textRef.current) {
+			setTextHeight(textRef.current.clientHeight);
+		}
+
+		const handleResize = () => {
+			if (textRef.current) {
+				setTextHeight(textRef.current.clientHeight);
+			}
+		};
+
+		window.addEventListener("resize", handleResize);
+		return () => window.removeEventListener("resize", handleResize);
+	}, []);
+
 	return (
 		<section className="w-full bg-gray-100 text-gray-900 py-16 relative">
 			<div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-24 xl:px-28 flex flex-col lg:flex-row items-start gap-10">
 				{/* Left Text Content */}
-				<div className="flex-1 space-y-6 max-w-2xl">
+				<div
+					ref={textRef}
+					className="flex-1 space-y-6 max-w-2xl">
 					<h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600">
 						Why you need our AI Trading Bot
 					</h2>
@@ -45,13 +66,15 @@ export default function BotBenefitsSection() {
 
 				{/* Right Side Illustration with Phone Image */}
 				<div className="flex-1 flex justify-center lg:justify-end">
-					<div className="relative w-64 lg:w-80 h-auto rounded-3xl flex items-center justify-center overflow-hidden">
+					<div
+						className="relative w-full rounded-3xl flex items-center justify-center overflow-hidden"
+						style={{ height: textHeight }}>
 						{/* Rotating Star */}
 						<Image
 							src="/assets/star.png"
 							alt="Rotating Star"
-							width={60}
-							height={60}
+							width={130}
+							height={130}
 							className="absolute top-4 right-4 animate-spin-slow pointer-events-none"
 						/>
 
@@ -59,8 +82,8 @@ export default function BotBenefitsSection() {
 						<Image
 							src="/assets/phone.png"
 							alt="Phone Illustration"
-							width={260} // set fixed width
-							height={260} // set fixed height
+							width={textHeight} // same as text height
+							height={textHeight}
 							className="object-contain rounded-3xl"
 						/>
 					</div>

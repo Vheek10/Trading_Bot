@@ -4,6 +4,8 @@ import BotInfoSection from "@/components/BotInfoSection";
 import Hero from "@/components/Hero";
 import MarketTicker from "@/components/MarketTicker";
 import BotBenefitsSection from "@/components/BotBenefitsSection";
+import EarnWithPhantomSection from "@/components/EarnWithPhantomSection";
+import PhantomAICosts from "@/components/PhantomAICosts";
 export default function Home() {
 	return (
 		<>
@@ -11,6 +13,8 @@ export default function Home() {
 			<MarketTicker />
 			<BotInfoSection />
 			<BotBenefitsSection />
+			<EarnWithPhantomSection />
+			<PhantomAICosts />
 		</>
 	);
 }
