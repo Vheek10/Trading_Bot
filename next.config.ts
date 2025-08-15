@@ -1,7 +1,15 @@
-import type { NextConfig } from "next";
+/**
+ * @format
+ * @type {import('next').NextConfig}
+ */
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+	images: {
+		domains: [
+			"cryptologos.cc", // crypto logos
+			"pngimg.com", // stars
+		],
+	},
 };
 
-export default nextConfig;
+module.exports = nextConfig;

@@ -10,31 +10,45 @@ export default function PhantomAICosts() {
 			{/* Floating crypto logos and stars in the background */}
 			<div className="absolute inset-0 pointer-events-none">
 				<Image
-					src="/assets/crypto1.png"
-					alt="Crypto Logo"
+					src="https://cryptologos.cc/logos/bitcoin-btc-logo.png"
+					alt="Bitcoin Logo"
 					width={50}
 					height={50}
 					className="absolute top-10 left-20 animate-float-slow"
 				/>
 				<Image
-					src="/assets/crypto2.png"
-					alt="Crypto Logo"
-					width={40}
-					height={40}
+					src="https://cryptologos.cc/logos/ethereum-eth-logo.png"
+					alt="Ethereum Logo"
+					width={50}
+					height={50}
 					className="absolute top-32 right-16 animate-float-slow delay-2000"
 				/>
 				<Image
-					src="/assets/star.png"
-					alt="Star"
+					src="https://cryptologos.cc/logos/solana-sol-logo.png"
+					alt="Solana Logo"
+					width={50}
+					height={50}
+					className="absolute top-20 left-40 animate-float-slow delay-3000"
+				/>
+				<Image
+					src="https://cryptologos.cc/logos/ripple-xrp-logo.png"
+					alt="Ripple Logo"
+					width={50}
+					height={50}
+					className="absolute top-50 right-10 animate-float-slow delay-4000"
+				/>
+				<Image
+					src="https://pngimg.com/uploads/star/star_PNG57.png"
+					alt="Shining Star"
 					width={30}
 					height={30}
 					className="absolute top-5 right-10 animate-spin-slow opacity-70"
 				/>
 				<Image
-					src="/assets/star.png"
-					alt="Star"
-					width={20}
-					height={20}
+					src="https://pngimg.com/uploads/star/star_PNG57.png"
+					alt="Shining Star"
+					width={30}
+					height={30}
 					className="absolute bottom-10 left-5 animate-pulse-slow opacity-50"
 				/>
 			</div>
@@ -46,7 +60,7 @@ export default function PhantomAICosts() {
 				</h2>
 
 				{/* Price Card */}
-				<div className="w-full max-w-md bg-gray-800/90 rounded-3xl p-8 flex flex-col gap-6 shadow-lg overflow-hidden">
+				<div className="w-full max-w-md bg-gray-800/90 rounded-3xl p-8 flex flex-col gap-6 shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl">
 					{/* One-Time Installation */}
 					<div className="text-center space-y-2">
 						<p className="text-lg text-gray-300">One-Time Installation</p>
@@ -87,7 +101,7 @@ export default function PhantomAICosts() {
 						<CTAButton
 							label="Get Started"
 							link="https://wa.me/2349012345678"
-							className="px-6 py-2 text-sm rounded-full"
+							className="px-6 py-2 text-sm rounded-full transition-transform transform hover:scale-110"
 						/>
 					</div>
 				</div>
