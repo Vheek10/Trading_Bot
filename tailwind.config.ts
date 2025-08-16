@@ -4,23 +4,24 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-	content: ["./src/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+	content: [
+		"./src/**/*.{js,ts,jsx,tsx}",
+		"./components/**/*.{js,ts,jsx,tsx}",
+		"./app/**/*.{js,ts,jsx,tsx}", // 👈 add this
+	],
 	theme: {
-  extend: {
-    animation: {
-      "spin-slow": "spin 20s linear infinite",
-      "float-slow": "float 6s ease-in-out infinite",
-      "pulse-slow": "pulse 3s ease-in-out infinite",
-    },
-    keyframes: {
-      float: {
-        "0%, 100%": { transform: "translateY(0px)" },
-        "50%": { transform: "translateY(-15px)" },
-      },
-    },
-  },
-}
-
+		extend: {
+			keyframes: {
+				gradient: {
+					"0%, 100%": { backgroundPosition: "0% 50%" },
+					"50%": { backgroundPosition: "100% 50%" },
+				},
+			},
+			animation: {
+				gradient: "gradient 4s ease infinite",
+			},
+		},
+	},
 	plugins: [],
 };
 
