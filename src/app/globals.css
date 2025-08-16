@@ -85,3 +85,11 @@
 .shadow-glow {
 	animation: pulseGlow 3s ease-in-out infinite;
 }
+/* globals.css */
+.scrollbar-hide::-webkit-scrollbar {
+	display: none;
+}
+.scrollbar-hide {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
