@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import React, { useRef } from "react";
+import { useSwipeable } from "react-swipeable";
 
 const testimonials = [
 	"/assets/1.jpeg",
@@ -36,6 +37,14 @@ export default function Testimonials() {
 		}
 	};
 
+	// Swipe handlers
+	const handlers = useSwipeable({
+		onSwipedLeft: () => scroll("right"),
+		onSwipedRight: () => scroll("left"),
+		preventScrollOnSwipe: true,
+		trackMouse: true, // allows mouse dragging too
+	});
+
 	return (
 		<section className="relative py-16 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white">
 			<div className="max-w-6xl mx-auto px-6">
@@ -44,21 +53,25 @@ export default function Testimonials() {
 				</h2>
 
 				<div className="relative">
-					{/* Slider */}
+					{/* Slider with swipe support */}
 					<div
+						{...handlers}
 						ref={scrollRef}
-						className="flex overflow-x-auto snap-x snap-mandatory gap-6 scrollbar-hide scroll-smooth">
+						className="flex overflow-x-auto snap-x snap-mandatory gap-6 scrollbar-hide scroll-smooth touch-pan-x">
 						{testimonials.map((img, i) => (
 							<div
 								key={i}
-								className="min-w-[80%] sm:min-w-[45%] lg:min-w-[30%] snap-center rounded-xl overflow-hidden shadow-lg transition-transform duration-500 hover:scale-105 bg-gray-900/70 p-3">
+								className="group relative min-w-[80%] sm:min-w-[45%] lg:min-w-[30%] snap-center rounded-xl overflow-hidden bg-gray-900/70 p-3">
 								<Image
 									src={img}
 									alt={`Testimonial ${i + 1}`}
 									width={400}
 									height={400}
-									className="w-full h-72 md:h-80 lg:h-96 object-contain rounded-lg"
+									className="w-full h-72 md:h-80 lg:h-96 object-contain rounded-lg transform transition-transform duration-500 group-hover:scale-105"
 								/>
+
+								{/* Shadow overlay on hover */}
+								<div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg" />
 							</div>
 						))}
 					</div>
