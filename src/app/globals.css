@@ -65,8 +65,8 @@
 }
 
 .animate-borderGlow {
-	background-size: 300% 300%;
-	animation: borderGlow 6s ease infinite;
+	background-size: 200% 200%;
+	animation: borderGlow 5s ease infinite;
 }
 
 /* Soft pulsing neon glow */
@@ -83,5 +83,5 @@
 }
 
 .shadow-glow {
-	animation: pulseGlow 4s ease-in-out infinite;
+	animation: pulseGlow 3s ease-in-out infinite;
 }
