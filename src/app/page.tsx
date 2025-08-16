@@ -6,6 +6,7 @@ import MarketTicker from "@/components/MarketTicker";
 import BotBenefitsSection from "@/components/BotBenefitsSection";
 import EarnWithPhantomSection from "@/components/EarnWithPhantomSection";
 import PhantomAICosts from "@/components/PhantomAICosts";
+import WhyUseAI from "@/components/WhyUseAI";
 export default function Home() {
 	return (
 		<>
@@ -15,6 +16,7 @@ export default function Home() {
 			<BotBenefitsSection />
 			<EarnWithPhantomSection />
 			<PhantomAICosts />
+			<WhyUseAI />
 		</>
 	);
 }
