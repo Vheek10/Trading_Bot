@@ -21,12 +21,12 @@ export default function Reviews() {
 					Our Reviews
 				</h2>
 
-				{/* Flex videos */}
-				<div className="flex flex-wrap justify-center gap-6">
+				{/* Slider Container */}
+				<div className="overflow-x-auto flex gap-6 snap-x snap-mandatory scrollbar-hide">
 					{videos.map((video, index) => (
 						<div
 							key={index}
-							className="rounded-xl overflow-hidden border border-gray-700 w-72 transform transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(168,85,247,0.6)]">
+							className="snap-center shrink-0 rounded-xl overflow-hidden border border-gray-700 w-72 transform transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(168,85,247,0.6)]">
 							<video
 								src={video}
 								controls

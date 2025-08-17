@@ -10,6 +10,8 @@ import WhyUseAI from "@/components/WhyUseAI";
 import JoinTradingGroup from "@/components/JoinTradingGroup";
 import Testimonials from "@/components/Testimonials";
 import Reviews from "@/components/Reviews";
+import WhyUs from "@/components/WhyUs";
+import FAQ from "@/components/FAQ";
 export default function Home() {
 	return (
 		<>
@@ -23,6 +25,8 @@ export default function Home() {
 			<JoinTradingGroup />
 			<Testimonials />
 			<Reviews />
+			<WhyUs />
+			<FAQ />
 		</>
 	);
 }
