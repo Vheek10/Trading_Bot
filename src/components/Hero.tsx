@@ -7,10 +7,9 @@ import Image from "next/image";
 export default function Hero() {
 	return (
 		<section
-			className="w-full text-white relative bg-cover bg-center bg-no-repeat brightness-110 contrast-125"
-			style={{ backgroundImage: "url('/assets/background.jpg')" }}>
-			{/* Gradient Overlay for readability */}
-			<div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-transparent"></div>
+			className="w-full text-blue-900 relative bg-[#D1E9FF] overflow-hidden">
+			{/* Subtle Light Gradient Overlay */}
+			<div className="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-blue-300/20"></div>
 
 			{/* Rotating Star in the Middle */}
 			<div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0">
@@ -19,7 +18,7 @@ export default function Hero() {
 					alt="Rotating Star"
 					width={150}
 					height={150}
-					className="animate-spin-slow opacity-80"
+					className="animate-spin-slow opacity-20"
 				/>
 			</div>
 
@@ -29,7 +28,7 @@ export default function Hero() {
 					<h1 className="text-4xl md:text-5xl font-bold leading-tight">
 						Make Consistent Passive Profits <br />
 						by Using our{" "}
-						<span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
+						<span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600">
 							Phantom A.I Trading Software
 						</span>
 					</h1>
@@ -37,7 +36,7 @@ export default function Hero() {
 					{/* Button */}
 					<CTAButton
 						label="Get Automated Trading Bot Now"
-						link="https://wa.me/2349012345678"
+						link="https://wa.me/2348116062226"
 					/>
 
 					{/* Image + Divider + Rating */}
@@ -49,18 +48,24 @@ export default function Hero() {
 							height={135}
 							className="object-contain"
 						/>
-						<div className="w-px h-20 bg-white/80"></div>
-						<h3 className="drop-shadow-lg font-bold">
+						<div className="w-px h-20 bg-blue-900/20"></div>
+						<h3 className="font-bold text-blue-900">
 							4.5 <br />
 							AVG RATING
 						</h3>
 					</div>
 				</div>
 
-				{/* Right Side Image Placeholder */}
+				{/* Hero Image */}
 				<div className="flex-1 flex justify-center lg:justify-end">
-					<div className="w-72 md:w-80 h-72 md:h-80 bg-gray-800/80 rounded-xl flex items-center justify-center shadow-lg">
-						<span className="text-gray-400">[Image Here]</span>
+					<div className="relative w-full max-w-lg aspect-square lg:aspect-auto lg:h-[450px]">
+						<Image
+							src="/assets/hero-image.jpg"
+							alt="Phantom AI Trading Bot"
+							fill
+							className="object-cover rounded-2xl"
+							priority
+						/>
 					</div>
 				</div>
 			</div>

@@ -88,7 +88,7 @@ export default function PhantomAICosts() {
 						<div className="flex justify-center mt-4">
 							<CTAButton
 								label="Get Started"
-								link="https://wa.me/2349012345678"
+								link="https://wa.me/2348116062226"
 								className="px-6 py-2 text-sm rounded-full transition-transform transform hover:scale-110"
 							/>
 						</div>

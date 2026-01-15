@@ -60,7 +60,7 @@ export default function BotBenefitsSection() {
 
 					<CTAButton
 						label="Get Automated Trading Bot Now"
-						link="https://wa.me/2349012345678"
+						link="https://wa.me/2348116062226"
 					/>
 				</div>
 

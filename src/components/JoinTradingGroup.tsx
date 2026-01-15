@@ -30,7 +30,7 @@ export default function JoinTradingGroup() {
 				</p>
 
 				<a
-					href="https://wa.me/2349012345678" // <-- replace with your WhatsApp link
+					href="https://wa.me/2348116062226" // <-- replace with your WhatsApp link
 					target="_blank"
 					rel="noopener noreferrer"
 					className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-8 py-3 rounded-lg text-lg font-semibold shadow-lg 
