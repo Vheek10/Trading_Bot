@@ -28,7 +28,7 @@ export default function BotInfoSection() {
 
 				{/* Right Text Content */}
 				<div className="flex-1 space-y-6 max-w-2xl">
-					<h1 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600">
+					<h1 className="text-3xl md:text-4xl font-bold text-indigo-700">
 						Phantom A.I <br />
 						Trading Robot
 					</h1>

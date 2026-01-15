@@ -6,10 +6,10 @@ import React from "react";
 
 export default function WhyUs() {
 	return (
-		<section className="w-full py-20 bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white">
+		<section className="w-full py-20 bg-gray-900 text-white">
 			<div className="max-w-6xl mx-auto px-6 text-center">
 				{/* Heading */}
-				<h2 className="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">
+				<h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-white">
 					No Credit Card Required
 				</h2>
 				<p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-12">
@@ -60,7 +60,7 @@ export default function WhyUs() {
 				<div className="mt-12">
 					<a
 						href="#"
-						className="px-8 py-4 text-lg font-semibold rounded-xl bg-gradient-to-r from-purple-600 to-pink-500 hover:from-pink-500 hover:to-red-500 transition transform hover:scale-105 inline-block shadow-lg">
+						className="px-8 py-4 text-lg font-semibold rounded-xl bg-purple-600 hover:bg-purple-700 transition transform hover:scale-105 inline-block shadow-lg">
 						Get Automated Trading Bot Now
 					</a>
 				</div>

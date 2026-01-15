@@ -3,6 +3,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { PlusIcon, MinusIcon } from "@heroicons/react/24/outline";
 
 const faqs = [
 	{
@@ -42,7 +43,7 @@ export default function FAQ() {
 		<section className="w-full py-20 bg-gray-950 text-white">
 			<div className="max-w-4xl mx-auto px-6">
 				{/* Heading */}
-				<h2 className="text-4xl font-bold text-center mb-6 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">
+				<h2 className="text-4xl font-bold text-center mb-6 text-white">
 					Frequently Asked Questions
 				</h2>
 				<p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
@@ -62,9 +63,11 @@ export default function FAQ() {
 								onClick={() => toggleFAQ(index)}
 								className="w-full flex justify-between items-center px-6 py-4 bg-gray-800 hover:bg-gray-700 transition">
 								<span className="font-medium">{faq.question}</span>
-								<span className="text-purple-400 text-xl">
-									{openIndex === index ? "−" : "+"}
-								</span>
+								{openIndex === index ? (
+									<MinusIcon className="w-5 h-5 text-purple-400" />
+								) : (
+									<PlusIcon className="w-5 h-5 text-purple-400" />
+								)}
 							</button>
 							{openIndex === index && (
 								<div className="px-6 py-4 bg-gray-900 text-gray-300 animate-fadeIn">

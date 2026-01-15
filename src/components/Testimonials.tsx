@@ -4,6 +4,7 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import { useSwipeable } from "react-swipeable";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 const testimonials = [
 	"/assets/1.jpeg",
@@ -46,9 +47,9 @@ export default function Testimonials() {
 	});
 
 	return (
-		<section className="relative py-16 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white">
+		<section className="relative py-16 bg-gray-900 text-white">
 			<div className="max-w-6xl mx-auto px-6">
-				<h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+				<h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
 					Hear From Our Students
 				</h2>
 
@@ -80,12 +81,12 @@ export default function Testimonials() {
 					<button
 						onClick={() => scroll("left")}
 						className="hidden lg:flex absolute top-1/2 -left-6 transform -translate-y-1/2 bg-gray-800/80 hover:bg-gray-700 p-3 rounded-full shadow-lg transition-all duration-300">
-						←
+						<ChevronLeftIcon className="w-6 h-6" />
 					</button>
 					<button
 						onClick={() => scroll("right")}
 						className="hidden lg:flex absolute top-1/2 -right-6 transform -translate-y-1/2 bg-gray-800/80 hover:bg-gray-700 p-3 rounded-full shadow-lg transition-all duration-300">
-						→
+						<ChevronRightIcon className="w-6 h-6" />
 					</button>
 				</div>
 			</div>

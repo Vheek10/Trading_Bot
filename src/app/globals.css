@@ -52,39 +52,7 @@
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
-@keyframes borderGlow {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
 
-.animate-borderGlow {
-	background-size: 200% 200%;
-	animation: borderGlow 5s ease infinite;
-}
-
-/* Soft pulsing neon glow */
-@keyframes pulseGlow {
-	0%,
-	100% {
-		box-shadow: 0 0 20px rgba(167, 139, 250, 0.5),
-			0 0 40px rgba(236, 72, 153, 0.3);
-	}
-	50% {
-		box-shadow: 0 0 30px rgba(167, 139, 250, 0.8),
-			0 0 60px rgba(236, 72, 153, 0.6);
-	}
-}
-
-.shadow-glow {
-	animation: pulseGlow 3s ease-in-out infinite;
-}
 /* globals.css */
 .scrollbar-hide::-webkit-scrollbar {
 	display: none;

@@ -6,10 +6,10 @@ import { CheckCircleIcon, XCircleIcon } from "@heroicons/react/24/solid";
 
 export default function WhyUseAI() {
 	return (
-		<section className="relative py-16 px-6 bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
+		<section className="relative py-16 px-6 bg-gray-900 text-white">
 			<div className="max-w-6xl mx-auto text-center mb-12">
 				<h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-					Why Should You Use Our AI Trading Robot?​
+					Why Should You Use Our AI Trading Robot?
 				</h2>
 				<p className="text-lg text-gray-300">
 					Compare the benefits of trading with{" "}

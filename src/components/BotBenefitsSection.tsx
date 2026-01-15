@@ -31,7 +31,7 @@ export default function BotBenefitsSection() {
 				<div
 					ref={textRef}
 					className="flex-1 space-y-6 max-w-2xl">
-					<h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600">
+					<h2 className="text-3xl md:text-4xl font-bold text-indigo-700">
 						Why you need our AI Trading Bot
 					</h2>
 
@@ -52,7 +52,7 @@ export default function BotBenefitsSection() {
 							<li
 								key={idx}
 								className="flex items-center gap-3 text-gray-700 text-lg leading-relaxed group hover:text-indigo-600 transition-colors duration-300">
-								<span className="inline-block w-4 h-4 bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 rounded-full flex-shrink-0 transform group-hover:scale-125 transition-transform duration-300"></span>
+								<span className="inline-block w-4 h-4 bg-indigo-500 rounded-full flex-shrink-0 transform group-hover:scale-125 transition-transform duration-300"></span>
 								{item}
 							</li>
 						))}

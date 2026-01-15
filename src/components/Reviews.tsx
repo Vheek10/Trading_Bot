@@ -17,7 +17,7 @@ export default function Reviews() {
 		<section className="w-full py-16 bg-gray-900 text-white">
 			<div className="max-w-6xl mx-auto px-6 text-center">
 				{/* Gradient Heading */}
-				<h2 className="text-4xl font-bold mb-10 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">
+				<h2 className="text-4xl font-bold mb-10 text-white">
 					Our Reviews
 				</h2>
 

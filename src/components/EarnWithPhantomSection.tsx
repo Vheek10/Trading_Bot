@@ -55,8 +55,7 @@ export default function EarnWithPhantomSection() {
 				{/* Right Text */}
 				<div className="flex-1 max-w-2xl space-y-6">
 					<h2 className="text-3xl md:text-4xl font-bold">
-						Earn with Phantom{" "}
-						<span className="text-yellow-400 animate-twinkle">AI</span>
+						Earn with Phantom <span className="text-yellow-400">AI</span>
 					</h2>
 					<p className="text-gray-300 text-lg leading-relaxed">
 						Our goal at Learn And Trade Academy is to assist as many people as
